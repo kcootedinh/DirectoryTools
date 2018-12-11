@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Microsoft.Extensions.CommandLineUtils;
 using Serilog;
-using Serilog.Core;
 
 namespace DirectoryTools.ConsoleApp
 {
