@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Extensions.CommandLineUtils;
+using Serilog;
 
 namespace DirectoryTools.ConsoleApp
 {
@@ -7,6 +8,8 @@ namespace DirectoryTools.ConsoleApp
     {
         static int Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
+            
             var app = new CommandLineApplication { Name = "Directory Tools" };
             app.HelpOption("-?|-h|--help");
 
